@@ -1,4 +1,4 @@
-public class MoveableCircle implements Movable{
+public class MovableCircle implements Movable{
     private int radius;
 
     public MovaeblePoint center;
@@ -9,24 +9,25 @@ public class MoveableCircle implements Movable{
     }
 
     @Override
-    public void moveUp() {center.moveUp();
-
+    public void moveUp() {
+        center.moveUp();
     }
 
     @Override
-    public void moveDown() {center.moveDown();
-
+    public void moveDown() {
+        center.moveDown();
     }
 
     @Override
-    public void moveLeft() {center.moveLeft();
-
+    public void moveLeft() {
+        center.moveLeft();
     }
 
     @Override
-    public void moveRight() {center.moveRight();
-
+    public void moveRight() {
+        center.moveRight();
     }
     public String toString(){
-        return "("+center.x + "," + center.y + "), speed =("+center.xSpeed + ","+center.ySpeed+"), radius = "+radius;
-}}
+        return "(" + center.x + "," + center.y + "), speed =(" + center.xSpeed + "," + center.ySpeed + "), radius = " + radius;
+}
+}
