@@ -1,4 +1,4 @@
-public class MovaeblePoint {
+public class MovablePoint {
     public int x ;
     public int y ;
     public int xSpeed;
@@ -18,15 +18,11 @@ public class MovaeblePoint {
     }
     public void moveDown(){
         y += ySpeed;
-
     }
     public void moveLeft(){
         x -= xSpeed;
-
     }
     public void moveRight(){
         x += xSpeed;
-
     }
-
 }
