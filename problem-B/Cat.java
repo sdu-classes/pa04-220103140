@@ -7,7 +7,8 @@ public class Cat extends Animal implements Pet {
         super(4);        
         catName = name;
     }
-    @Override    public String getName() {
+    @Override    
+    public String getName() {
        return catName;    
     }
     @Override
