@@ -1,5 +1,5 @@
 package File;
-interface Moovable {
+interface Movable {
     abstract void moveUp();
     abstract void moveDown();
     abstract void moveLeft();
