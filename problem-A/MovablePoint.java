@@ -1,28 +1,32 @@
-public class MovablePoint {
-    public int x ;
-    public int y ;
-    public int xSpeed;
-    public int ySpeed;
+public class MovablePoint implements Movable{
+    int x;
+    int y;
+    int xSpeed;
+    int ySpeed;
 
-    MovaeblePoint(int x , int y , int xSpeed, int ySpeed){
-        this.x=x;
-        this.y=y;
+    public MovablePoint(int x, int y, int xSpeed, int ySpeed){
+        this.x = x;
+        this.y = y;
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
     public String toString(){
-        return String.format("(%1$s, %2$s), speed=(%3$s, %4$s) " , x,y,xSpeed,ySpeed);
+        return "(" + this.x + "," + this.y + ")" + ",speed=(" + this.xSpeed + "," + this.ySpeed + ")";
     }
+    @Override
     public void moveUp(){
-        y -= ySpeed;
+        this.y -= this.ySpeed;
     }
+    @Override
     public void moveDown(){
-        y += ySpeed;
+        this.y += this.ySpeed;
     }
+    @Override
     public void moveLeft(){
-        x -= xSpeed;
+        this.x -= this.xSpeed;
     }
+    @Override
     public void moveRight(){
-        x += xSpeed;
+        this.x += this.xSpeed;
     }
 }
