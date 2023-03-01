@@ -1,4 +1,3 @@
-package File;
 interface Movable {
     abstract void moveUp();
     abstract void moveDown();
